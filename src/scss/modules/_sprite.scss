@@ -18,13 +18,13 @@ $cb-bullet-home-width: 18px;
 $cb-bullet-home-height: 14px;
 $cb-bullet-home-total-width: 18px;
 $cb-bullet-home-total-height: 14px;
-$cb-bullet-home-image: 'src/img/sprite.png';
-$cb-bullet-home: (0px, 0px, 0px, 0px, 18px, 14px, 18px, 14px, 'src/img/sprite.png', 'cb_bullet_home', );
+$cb-bullet-home-image: '../../src/img/sprite.png';
+$cb-bullet-home: (0px, 0px, 0px, 0px, 18px, 14px, 18px, 14px, '../../src/img/sprite.png', 'cb_bullet_home', );
 $spritesheet-width: 18px;
 $spritesheet-height: 14px;
-$spritesheet-image: 'src/img/sprite.png';
+$spritesheet-image: '../../src/img/sprite.png';
 $spritesheet-sprites: ($cb-bullet-home, );
-$spritesheet: (18px, 14px, 'src/img/sprite.png', $spritesheet-sprites, );
+$spritesheet: (18px, 14px, '../../src/img/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
 //

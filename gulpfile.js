@@ -17,20 +17,20 @@ gulp.task('sass',function(){
 gulp.task('sprite',function() {
   var spriteData = gulp.src('src/img/sprites/*.png')
     .pipe(spritesmith({
-      imgName : 'src/img/sprite.png',
+      imgName : '../../src/img/sprite.png',
       padding : 4,
       cssName : '_sprite.scss'
     }));
   var imgStream  = new Promise(function(resolve){
     spriteData.img
-      .pipe(buffer()) // imagemin
-      .pipe(imagemin()) // imagemin
+      .pipe(buffer())
+      .pipe(imagemin())
       .pipe(gulp.dest(''))
       .on('end',resolve);
   });
   var cssStream  = new Promise(function(resolve){
     spriteData.css
-      .pipe(gulp.dest('src/img/'))
+      .pipe(gulp.dest('src/scss/modules'))
       .on('end',resolve);
   });
 

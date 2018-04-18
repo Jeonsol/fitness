@@ -1,5 +1,7 @@
-@import 'moduels/header.scss';
+@import 'modules/sprite';
+@import 'modules/header';
 
 header {
 	background-color: red;
+	@include sprite($cb-bullet-home);
 }
